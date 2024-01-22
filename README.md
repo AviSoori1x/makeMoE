@@ -21,7 +21,7 @@ Unchanged from makemore
 - dataset, preprocessing (tokenization), and the language modeling task Andrej chose originally - generate Shakespeare-like text
 - Casusal self attention implementation 
 - Training loop
-- inference code
+- Inference logic
 
 Publications heavily referenced for this implementation: 
 - Mixtral of experts: https://arxiv.org/pdf/2401.04088.pdf
