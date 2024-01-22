@@ -18,7 +18,7 @@ Significant Changes from the makemore architecture
 - initialization - Kaiming He initialization used here but the point of this notebook is to be hackable so you can swap in Xavier Glorot etc. and take it for a spin.
 
 Unchanged from makemore
-- dataset, preprocessing (tokenization), and the language modeling task Andrej chose originally - generate Shakespear-like text
+- dataset, preprocessing (tokenization), and the language modeling task Andrej chose originally - generate Shakespeare-like text
 - Casusal self attention implementation 
 - Training loop
 - inference code
