@@ -5,7 +5,7 @@
 </div>
 
 
-From scratch implementation of a sparse mixture of experts language model inspired by (and largely based on) Andrej Karpathy's makemore :)
+From scratch implementation of a sparse mixture of experts language model inspired by (and largely based on) Andrej Karpathy's makemore (https://github.com/karpathy/makemore) :)
 
 This is a from scratch implementation of a sparse mixture of experts language model. This is inspired by and largely based on Andrej Karpathy's project makemore and borrows most of the re-usable components from that implementation. Just like makemore, makeMoE is also an autoregressive character-level language model that uses the aforementioned sparse mixture of experts architecture. 
 
