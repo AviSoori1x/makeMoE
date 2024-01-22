@@ -18,7 +18,7 @@ Unchanged from makemore
 - Training loop
 - inference code
 
-Publications heavily relied on for this implementation: 
+Publications heavily referenced for this implementation: 
 - Mixtral of experts: https://arxiv.org/pdf/2401.04088.pdf
 - Outrageosly Large Neural Networks: The Sparsely-Gated Mixture-Of-Experts layer: https://arxiv.org/pdf/1701.06538.pdf
 
