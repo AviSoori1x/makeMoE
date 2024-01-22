@@ -20,7 +20,7 @@ Unchanged from makemore
 
 Publications heavily relied on for this implementation: 
 - Mixtral of experts: https://arxiv.org/pdf/2401.04088.pdf
-- Outrageosly large neural networks: The sparsely gated mixture of experts layer: https://arxiv.org/pdf/1701.06538.pdf
+- Outrageosly Large Neural Networks: The Sparsely-Gated Mixture-Of-Experts layer: https://arxiv.org/pdf/1701.06538.pdf
 
 0_makMoE_intuition.ipynb walks through the intuition for the entire model architecture how everything comes together
 1_makeMoE.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
