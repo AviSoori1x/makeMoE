@@ -1,6 +1,7 @@
 # makeMoE
 
-![MoE](images/makemoelogo.png)
+<img src="images/makemoelogo.png" width="300"/>
+
 
 From scratch implementation of a sparse mixture of experts language model inspired by (and largely based on) Andrej Karpathy's makemore :)
 
