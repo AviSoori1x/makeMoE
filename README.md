@@ -28,9 +28,9 @@ Publications heavily referenced for this implementation:
 - Outrageosly Large Neural Networks: The Sparsely-Gated Mixture-Of-Experts layer: https://arxiv.org/pdf/1701.06538.pdf
 
 
-makMoE_intuition.ipynb walks through the intuition for the entire model architecture and how everything comes together
+makMoE_from_Scratch.ipynb walks through the intuition for the entire model architecture and how everything comes together. I recommend starting here.
 
-makeMoE.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
+makeMoE_Concise.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
 
 **The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues in the cloud provider of your choice**
 
