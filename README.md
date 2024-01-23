@@ -32,6 +32,8 @@ makMoE_intuition.ipynb walks through the intuition for the entire model architec
 
 makeMoE.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
 
+**The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues in the cloud provider of your choice**
+
 **Please note that the implementation emphasizes readability and hackability vs performance, so there are many ways in which you could improve this. Please try and let me know!**
 
 Hope you find this useful and enjoy!!
