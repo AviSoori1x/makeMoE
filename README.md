@@ -1,7 +1,7 @@
 # makeMoE
 
 <div align="center">
-    <img src="images/makemoelogo.png" width="300"/>
+    <img src="images/makemoelogo.png" width="500"/>
 </div>
 
 
