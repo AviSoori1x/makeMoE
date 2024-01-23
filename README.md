@@ -32,4 +32,6 @@ makMoE_intuition.ipynb walks through the intuition for the entire model architec
 
 makeMoE.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
 
+Please note that the implementation emphasizes readability and hackability vs performance, so there are many ways in which you could improve this. Please try and let me know!
+
 Hope you find this useful and enjoy!!
