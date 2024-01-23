@@ -4,8 +4,7 @@
     <img src="images/makemoelogo.png" width="500"/>
 </div>
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)]([https://colab.research.google.com](https://colab.research.google.com/github/AviSoori1x/makeMoE/blob/main/makeMoE_from_Scratch.ipynb)
-
+![Open In Colab(https://colab.research.google.com/assets/colab-badge.svg)]([[https://colab.research.google.com]
 
 
 #### Sparse mixture of experts language model from scratch inspired by (and largely based on) Andrej Karpathy's makemore (https://github.com/karpathy/makemore) :)
