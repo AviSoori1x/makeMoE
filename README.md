@@ -38,7 +38,7 @@ makMoE_from_Scratch.ipynb walks through the intuition for the entire model archi
 
 makeMoE_Concise.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
 
-**The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues in the cloud provider of your choice**
+**The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues, on the cloud provider of your choice**
 
 **I chose to use MLFlow (which comes pre-installed in Databricks. It's fully open source and you can pip install easily elsewhere) as I find it helpful to track and log all the metrics necessary. This is entirely optional.**
 
