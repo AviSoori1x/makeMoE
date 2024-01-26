@@ -42,6 +42,6 @@ makeMoE_Concise.ipynb is the consolidated hackable implementation that I encoura
 
 **I chose to use MLFlow (which comes pre-installed in Databricks. It's fully open source and you can pip install easily elsewhere) as I find it helpful to track and log all the metrics necessary. This is entirely optional.**
 
-**Please note that the implementation emphasizes readability and hackability vs performance, so there are many ways in which you could improve this. Please try and let me know!**
+**Please note that the implementation emphasizes readability and hackability vs. performance, so there are many ways in which you could improve this. Please try and let me know!**
 
 Hope you find this useful. Happy hacking!!
