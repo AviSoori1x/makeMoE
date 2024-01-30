@@ -5,7 +5,7 @@
 </div>
 
 <a href="https://www.databricks.com/product/machine-learning">
-    <img src="https://raw.githubusercontent.com/AviSoori1x/makeMoE/main/images/databricks.png" width="100px" height="auto">
+    <img src="https://raw.githubusercontent.com/AviSoori1x/makeMoE/main/images/databricks.png" width="50px" height="auto">
 </a>
 <br>
 <span>Built with Databricks with ❤️</span>
