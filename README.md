@@ -4,10 +4,11 @@
     <img src="images/makemoelogo.png" width="500"/>
 </div>
 
-
-[![Built on Databricks with ❤️](https://raw.githubusercontent.com/AviSoori1x/makeMoE/main/images/databricks.png)](https://www.databricks.com/product/machine-learning)
-
-
+<a href="https://www.databricks.com/product/machine-learning">
+    <img src="https://raw.githubusercontent.com/AviSoori1x/makeMoE/main/images/databricks.png" width="100px" height="auto">
+</a>
+<br>
+<span>Built with Databricks with ❤️</span>
 
 #### Sparse mixture of experts language model from scratch inspired by (and largely based on) Andrej Karpathy's makemore (https://github.com/karpathy/makemore) :)
 
