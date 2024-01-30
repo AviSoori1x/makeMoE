@@ -5,7 +5,7 @@
 </div>
 
 
-[![Built on Databricks with ❤️]([https://colab.research.google.com/assets/colab-badge.svg](https://assets.stickpng.com/images/62c719e9b44be1961554a6e0.png))](https://www.databricks.com/product/machine-learning)
+[[![Built on Databricks with ❤️](https://assets.stickpng.com/images/62c719e9b44be1961554a6e0.png)](https://www.databricks.com/product/machine-learning)
 
 
 
