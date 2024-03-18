@@ -26,6 +26,7 @@ Significant Changes from the makemore architecture
 - Sparse mixture of experts instead of the solitary feed forward neural net. 
 - Top-k gating and noisy top-k gating implementations.
 - initialization - Kaiming He initialization used here but the point of this notebook is to be hackable so you can swap in Xavier Glorot etc. and take it for a spin.
+- Expert Capacity -- mostrecent update (03/18/2024)
 
 Unchanged from makemore
 - The dataset, preprocessing (tokenization), and the language modeling task Andrej chose originally - generate Shakespeare-like text
