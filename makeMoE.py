@@ -18,7 +18,6 @@ n_layer = 8
 dropout = 0.1
 num_experts = 8
 top_k = 2
-# ------------
 
 torch.manual_seed(1337)
 
@@ -73,7 +72,6 @@ class Head(nn.Module):
         self.query = nn.Linear(n_embed, head_size, bias=False)
         self.value = nn.Linear(n_embed, head_size, bias=False)
         self.register_buffer('tril', torch.tril(torch.ones(block_size, block_size)))
-
         self.dropout = nn.Dropout(dropout)
 
     def forward(self, x):
@@ -178,15 +176,12 @@ class SparseMoE(nn.Module):
             expert_mask = (indices == i).any(dim=-1)
             flat_mask = expert_mask.view(-1)
             selected_indices = torch.nonzero(flat_mask).squeeze(-1)
-
             limited_indices = selected_indices[:expert_capacity] if selected_indices.numel() > expert_capacity else selected_indices
             if limited_indices.numel() > 0:
                 expert_input = flat_x[limited_indices]
                 expert_output = expert(expert_input)
-
                 gating_scores = flat_gating_output[limited_indices, i].unsqueeze(1)
                 weighted_output = expert_output * gating_scores
-
                 updates.index_add_(0, limited_indices, weighted_output)
 
         # Reshape updates to match the original dimensions of x
@@ -275,7 +270,6 @@ def main():
     model = model.to(device)
 
     print(sum(p.numel() for p in model.parameters()) / 1e6, 'M parameters')
-    
     optimizer = torch.optim.AdamW(model.parameters(), lr=learning_rate)
 
     m = model.to(device)
