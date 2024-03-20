@@ -16,6 +16,7 @@
 #### Sparse mixture of experts language model from scratch inspired by (and largely based on) Andrej Karpathy's makemore (https://github.com/karpathy/makemore) :)
 
 HuggingFace Community Blog that walks through this: https://huggingface.co/blog/AviSoori1x/makemoe-from-scratch
+Part #2 detailing expert capacity: https://huggingface.co/blog/AviSoori1x/makemoe2
 
 This is an implementation of a sparse mixture of experts language model from scratch. This is inspired by and largely based on Andrej Karpathy's project 'makemore' and borrows the re-usable components from that implementation. Just like makemore, makeMoE is also an autoregressive character-level language model but uses the aforementioned sparse mixture of experts architecture. 
 
