@@ -16,8 +16,8 @@ n_embed = 128
 n_head = 8
 n_layer = 8
 dropout = 0.1
-num_experts = 8
-top_k = 2
+num_experts = 8 # This can be adjusted depending on the overall number of parameters
+top_k = 2 # This controls the number of active parameters
 
 torch.manual_seed(1337)
 
