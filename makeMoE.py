@@ -127,7 +127,6 @@ class NoisyTopkRouter(nn.Module):
         self.topkroute_linear = nn.Linear(n_embed, num_experts)
         self.noise_linear =nn.Linear(n_embed, num_experts)
 
-
     def forward(self, mh_output):
         # mh_ouput is the output tensor from multihead self attention block
         logits = self.topkroute_linear(mh_output)
