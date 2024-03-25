@@ -37,7 +37,7 @@ Unchanged from makemore
 - Inference logic
 
 Publications heavily referenced for this implementation: 
-- Outrageosly Large Neural Networks: The Sparsely-Gated Mixture-Of-Experts layer: https://arxiv.org/pdf/1701.06538.pdf
+- Outrageously Large Neural Networks: The Sparsely-Gated Mixture-Of-Experts layer: https://arxiv.org/pdf/1701.06538.pdf
 - Mixtral of experts: https://arxiv.org/pdf/2401.04088.pdf
 
 makeMoE.py is the entirety of the implementation in a single file of pytorch.
