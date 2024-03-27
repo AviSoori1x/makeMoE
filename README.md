@@ -32,7 +32,7 @@ Significant Changes from the makemore architecture
 
 Unchanged from makemore
 - The dataset, preprocessing (tokenization), and the language modeling task Andrej chose originally - generate Shakespeare-like text
-- Casusal self attention implementation 
+- Causal self attention implementation 
 - Training loop
 - Inference logic
 
