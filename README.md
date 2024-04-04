@@ -44,6 +44,8 @@ makeMoE.py is the entirety of the implementation in a single file of pytorch.
 
 makMoE_from_Scratch.ipynb walks through the intuition for the entire model architecture and how everything comes together. I recommend starting here.
 
+makeMoE_from_Scratch_with_Expert_Capacity.ipynb just builds on the above walkthrough and adds expert capacity for more efficient training.
+
 makeMoE_Concise.ipynb is the consolidated hackable implementation that I encourage you to hack, understand, improve and make your own
 
 **The code was entirely developed on Databricks using a single A100 for compute. If you're running this on Databricks, you can scale this on an arbitrarily large GPU cluster with no issues, on the cloud provider of your choice.**
