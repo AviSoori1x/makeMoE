@@ -292,7 +292,12 @@ def kaiming_init_weights(m):
 
 def main():
     model = SparseMoELanguageModel()
-    model.apply(kaiming_init_weights)
+    try:
+        model.load_state_dict(torch.load("model.pt").state_dict())
+        print("Successfully load checkpoint from model.pt file.")
+    except FileNotFoundError:
+        # Kaiming uniform initialization, also known as He initialization,work well with layers that use the ReLU activation function.
+        model.apply(kaiming_init_weights)
     model = model.to(device)
 
     print(sum(p.numel() for p in model.parameters()) / 1e6, "M parameters")
@@ -313,6 +318,7 @@ def main():
             print(
                 f"step {iter}: train loss {losses['train']:.4f}, val loss {losses['val']:.4f}"
             )
+            torch.save(model, "model.pt")
 
         # sample a batch of data
         xb, yb = get_batch("train")
