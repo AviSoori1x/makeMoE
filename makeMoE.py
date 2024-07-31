@@ -1,3 +1,4 @@
+import numpy as np
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
@@ -18,6 +19,7 @@ n_layer = 8
 dropout = 0.1
 num_experts = 8  # This can be adjusted depending on the overall number of parameters
 top_k = 2  # This controls the number of active parameters
+hook_router_output = True
 
 torch.manual_seed(1337)
 
@@ -290,13 +292,40 @@ def kaiming_init_weights(m):
         init.kaiming_normal_(m.weight)
 
 
+class RouterOutputHook:
+    def __init__(self, block_index):
+        self.block_index = block_index
+
+    def __call__(self, module, inputs, output):
+        routed_indices = output[1].detach().cpu().flatten()
+        expert_indices, token_counts = np.unique(routed_indices, return_counts=True)
+        # set token count default to 0
+        row = ["0"] * 8
+        for e, cnt in zip(expert_indices, token_counts):
+            row[e] = str(cnt)
+        # row formated: layer_index, token_counts for per expert.
+        row = [str(self.block_index)] + row
+
+        line = ",".join(row) + "\n"
+        with open("router-output.log.csv", "a") as f:
+            f.write(line)
+
+
 def main():
     model = SparseMoELanguageModel()
+    # Register hooks with block indices
+    if hook_router_output:
+        hooks = [
+            b.smoe.router.register_forward_hook(RouterOutputHook(i))
+            for i, b in enumerate(model.blocks)
+        ]
+
     try:
         model.load_state_dict(torch.load("model.pt").state_dict())
         print("Successfully load checkpoint from model.pt file.")
-    except FileNotFoundError:
+    except (FileNotFoundError, RuntimeError):
         # Kaiming uniform initialization, also known as He initialization,work well with layers that use the ReLU activation function.
+        print("Initialized model parameters using Kaiming uniform initialization.")
         model.apply(kaiming_init_weights)
     model = model.to(device)
 
@@ -328,6 +357,9 @@ def main():
         optimizer.zero_grad(set_to_none=True)
         loss.backward()
         optimizer.step()
+    # remove hooks
+    if hook_router_output:
+        [h.remove() for h in hooks]
 
 
 if __name__ == "__main__":
