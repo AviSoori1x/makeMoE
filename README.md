@@ -11,9 +11,9 @@
 <br>
 <span>Developed using Databricks with ❤️</span>
 
+## Overview
 
-
-#### Sparse mixture of experts language model from scratch inspired by (and largely based on) Andrej Karpathy's makemore (https://github.com/karpathy/makemore) :)
+**Sparse mixture of experts language model from scratch inspired by (and largely based on) Andrej Karpathy's makemore (https://github.com/karpathy/makemore) :)**
 
 HuggingFace Community Blog that walks through this: https://huggingface.co/blog/AviSoori1x/makemoe-from-scratch
 
@@ -55,3 +55,16 @@ makeMoE_Concise.ipynb is the consolidated hackable implementation that I encoura
 **Please note that the implementation emphasizes readability and hackability vs. performance, so there are many ways in which you could improve this. Please try and let me know!**
 
 Hope you find this useful. Happy hacking!!
+
+
+## Usage
+
+* train
+
+```bash
+python makeMoE.py
+```
+
+* visualize: [visualize-router-output.ipynb](./visualize-router-output.ipynb)
+
+![](./router-output.log.svg)
